@@ -12,6 +12,553 @@
     <script src="js/jquery-1.12.4.min.js"></script>
 </head>
 <body>
+    <!-- 출처: 꽃게담다. PC 팝업창 -->
+    <div class="layer-popup pc"
+         style="display: block; width: 80%; max-width: <?= $popup['width'] ?>px; height: <?= $popup['height'] ?>px; top: 10%; left: 5%; z-index: <?= $z_index ?>;">
+        <div id="agreePopup<?= $popup['id'] ?>" class="agree-popup-frame">
+            <img src="data/popup/<?= $popup['file_name'] ?>" style=" height:calc(<?= $popup['height'] ?>px - 36px);"
+                 alt="<?= $popup['popup_name'] ?>">
+            <div class="show-chk-wrap">
+                <a href="javascript:todayClose('agreePopup<?= $popup['id'] ?>', 1);" class="today-x-btn">오늘하루닫기</a>
+                <a class="close-popup x-btn">닫기</a>
+            </div>
+        </div>
+    </div>
 
+    <!-- 출처: 꽃게담다. 모바일 팝업창 -->
+    <div class="layer-popup mobile"
+         style="display: block; width: 80%; max-width: <?= $popup['width_mobile'] ?>px; height: <?= $popup['height_mobile'] ?>px; top: 10%; left: 10%; z-index: <?= $z_index ?>;">
+        <div id="agreePopup_mo<?= $popup['id'] ?>" class="agree-popup-frame">
+            <img src="data/popup/<?= $popup['file_name_mobile'] ?>" style=" height:calc(<?= $popup['height'] ?>px - 36px);"
+                 alt="<?= $popup['popup_name'] ?>">
+            <div class="show-chk-wrap">
+                <a href="javascript:todayClose('agreePopup_mo<?= $popup['id'] ?>', 1);" class="today-x-btn">오늘하루닫기</a>
+                <a class="close-popup x-btn">닫기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다. [메인 첫페이지] 이미지 출력 -->
+    <div id="page1">
+        <div class="pg1-container">
+            <img src="img/page1/logo-small.png" data-aos="zoom-in" data-aos-duration="1000" class="logo-small">
+            <img src="img/page1/pg1-tit.png" data-aos="zoom-in" data-aos-duration="1000" class="pg1-tit">
+            <div class="circle-wrapper">
+                <img src="img/page1/pg1-circle.png" data-aos="flip-right" data-aos-duration="1000" class="pg1-circle">
+                <img src="img/page1/pg1-circle2.png" data-aos="flip-right" data-aos-duration="1500" class="pg1-circle">
+                <img src="img/page1/pg1-circle3.png" data-aos="flip-right" data-aos-duration="2000" class="pg1-circle">
+            </div>
+            <div class="circle-wrap">
+                <div class="circle-swiper-container">
+                    <div class="swiper-wrapper" >
+                        <div class="swiper-slide"><img src="img/page1/pg1-circle.png"></div>
+                        <div class="swiper-slide"><img src="img/page1/pg1-circle2.png"></div>
+                        <div class="swiper-slide"><img src="img/page1/pg1-circle3.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 출처: 꽃게담다. [성공경쟁력] 이미지 및 텍스트 출력 -->
+    <div id="page2">
+        <div class="pg2-container">
+            <div class="tit-div"><img src="img/page2/pg2-tit.png" class="pg2-tit" data-aos="fade-down" data-aos-duration="1000"></div>
+            <div class="tit-div"><img src="img/page2/pg2-tit-mo.png" class="pg2-tit-mo" data-aos="fade-down" data-aos-duration="1000"></div>
+            <div class="picture-container">
+                <div class="picture-wrapper1">
+                    <div class="square" data-aos="zoom-out-right"  data-aos-duration="500">
+                        <img src="img/page2/pg2-pic.png" class="pg2-pic">
+                        <div class="pic-detail">
+                            <div class="pic-tit">1. 경쟁없는 국내 유일브랜드</div>
+                            <hr>
+                            <div class="pic-content">수산업 국내 최대규모 <span>동원수산㈜</span>과의 계약으로<br>
+                            안정적 물량수급 및 전국 유통망 구축.<br>
+                            비용은 최대한 <span>낮추고</span> 경쟁력은 최대한 <span>높였</span>습니다</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture-wrapper2">
+                    <div class="square" data-aos="zoom-out-left"  data-aos-duration="800">
+                        <img src="img/page2/pg2-pic2.png" class="pg2-pic">
+                        <div class="pic-detail">
+                            <div class="pic-tit2">2. 인건비 절감</div>
+                            <hr>
+                            <div class="pic-content">명장의 노하우를 <span>원팩푸드 시스템 구축</span>을 통한 간편 운영.<br class="mo-br">
+                            라면만 끓일줄 알아도 가능한 간편조리로<br>
+                            인건비 절감이 충분히 가능합니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture-wrapper1">
+                    <div class="square" data-aos="zoom-out-left"  data-aos-duration="1100">
+                        <img src="img/page2/pg2-pic3.png" class="pg2-pic">
+                        <div class="pic-detail">
+                            <div class="pic-tit">3. 높은 순수익</div>
+                            <hr>
+                            <div class="pic-content">매출보다 중요한건 순수익 입니다.<br class="mo-br">
+                            32.4%의 높은 순수익, <span>자체수급</span>이기에 가능합니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture-wrapper2">
+                    <div class="square" data-aos="zoom-out-left"  data-aos-duration="1400">
+                        <img src="img/page2/pg2-pic4.png" class="pg2-pic">
+                        <div class="pic-detail">
+                            <div class="pic-tit2">4. <span>4WAY</span> 안정적 매출 구조</div>
+                            <hr>
+                            <div class="pic-content">밀키트 구성 + 점심메뉴 개발로</div>
+                            <div class="point-wrap"><span class="point">점심</span><span class="point">저녁</span><span class="point">배달</span><span class="point">포장</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture-wrapper1">
+                    <div class="square" data-aos="zoom-out-left"  data-aos-duration="1700">
+                        <img src="img/page2/pg2-pic5.png" class="pg2-pic">
+                        <div class="pic-detail">
+                            <div class="pic-tit">5. 오랫동안 갈 수 밖에 없는 브랜드</div>
+                            <hr>
+                            <div class="pic-content">결국 식당은 <span>음식맛으로 승부합니다</span>.  남녀노소 상관없이<br class="mo-br">
+                            전 연령이 좋아하고 트렌드를 타지않는 브랜드가 결국<br class="mo-br">
+                            살아남습니다.<br>
+                            <br>
+                            자체개발한 짜지않고 감칠맛나는 특제 간장소스로, 시식하신 분들은 대부분 맛을 보고 바로 계약할 수 밖에 없습니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture-wrapper2">
+                    <div class="square" data-aos="zoom-out-left"  data-aos-duration="2000">
+                        <img src="img/page2/pg2-pic6.png" class="pg2-big-pic">
+                        <div class="pic-detail2">
+                            <div class="pic-tit2">6. SNS에서도 핫한 매장</div>
+                            <hr>
+                            <div class="pic-content">메뉴의 퀄 대비 가성비 좋은 가격, 깔끔한 인테리어로<br class="mo-br">
+                            젊은 세대에겐 <span>SNS 가성비 맛집</span>으로 인기몰이 중</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다. [성공경쟁력] 이미지 및 텍스트 출력 -->
+    <div id="page3">
+        <div class="pg3-container">
+            <img src="img/page3/pg3-tit.png" class="pg3-tit" data-aos="flip-up" data-aos-duration="1000">
+            <img src="img/page3/pg3-tit-mo.png" class="pg3-tit-mo">
+            <div class="pg3-wrapper">
+                <div class="left" data-aos="zoom-in" data-aos-duration="500">원물 특성상<br class="mo-br3"> 개인매장<br class="mo-br2">
+                창업이 힘든 꽃게
+                </div>
+                <div class="right-div" data-aos="zoom-in" data-aos-duration="1200"><img src="img/page3/Right.png" class="right"></div>
+                <div class="dongwon" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="img/page3/pg3-dongwon.png" class="dongwon-pic">
+                    <div class="dongwon-detail">
+                        <img src="img/page3/dongwon.png" class="dongwon-tit">
+                        <div class="dongwon-middle">동원수산(주)과 계약하여<br class="mo-br2">
+                            <span class="bold">물류 경쟁력</span> <span class="medium">확보</span></div>
+                        <div class="dongwon-bottom">모든 원물은 <span class="bold">동원수산(주)</span>의 <br class="mo-br2">
+                            국내산 꽃게만을 사용합니다</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pg3-bottom-tit">
+                <div class="bottom1"><span class="bold">꽃게</span>라는 계절 상품의 특성상 수급이 불안정해 본사를 쉽게 런칭할 수 없으며,<br class="sm-br">
+                많은 꽃게 재고를 확보하여 있어야 하기 때문에 재고의 부담이 큽니다. </div>
+                <div class="bottom2">대신 한 번 자리잡으면 꾸준히 고객이 쌓여 안정적인 매출과 수익이 보장되는<br class="sm-br">
+                희소성 있는 메뉴가 바로 <span class="bold">간장게장</span>입니다</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다. [매출&수익] 이미지 및 텍스트 출력 -->
+    <div id="page4">
+        <div class="pg4-container">
+            <img src="img/page4/pg4-tit.png" class="pg4-tit" data-aos="zoom-in-down" data-aos-duration="1000">
+            <div class="pg4-middle-tit" data-aos="zoom-in-down" data-aos-duration="1200">
+            매출보다 순수익을 중요시하는 꽃게담다는<br>
+            <span class="extrabold">하루 매출로 월세를 낼 수 있는<br class="no-br"> 뛰어난 수익성</span>을 보장합니다
+            </div>
+            <div class="reciept-wrapper">
+                <img src="img/page4/reciept1.png" class="reciept" data-aos="fade-up" data-aos-duration="800">
+                <img src="img/page4/reciept2.png" class="reciept" data-aos="fade-down" data-aos-duration="1000">
+            </div>
+            <div class="total">총매출 7000만원 가정시</div>
+            <div class="chart-img">
+                <img src="img/page4/thumb-up.png" class="thumb bounce">
+                <img src="img/page4/chart.png" class="chart" data-aos="flip-down" data-aos-duration="800">
+                <img src="img/page4/chart-mo.png" class="chart-mo">
+            </div>
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다. [고객후기] 이미지 출력 -->
+    <div id="page5">
+        <div class="pg5-container">
+            <img src="img/page5/pg5-tit.png" class="pg5-tit" data-aos="zoom-in-up" data-aos-duration="800">
+            <div class="laptop-div">
+                <img src="img/page5/star.png" class="star" data-aos="zoom-out" data-aos-duration="800">
+                <img src="img/page5/laptop.png" class="laptop">
+            </div>
+            <img src="img/page5/Group.png" class="laptop-group">
+            <div class="review-container">
+                <img src="img/page5/review1.png" class="review" data-aos="zoom-out-right" data-aos-duration="800">
+                <img src="img/page5/review2.png" class="review" data-aos="zoom-out-right" data-aos-duration="1300">
+                <img src="img/page5/review3.png" class="review" data-aos="zoom-out-right" data-aos-duration="1800">
+                <img src="img/page5/review4.png" class="review" data-aos="zoom-out-right" data-aos-duration="2300">
+                <img src="img/page5/review5.png" class="review" data-aos="zoom-out-right" data-aos-duration="2800">
+            </div>
+            <div class="review-wrap">
+                <div class="review-swiper-container">
+                    <div class="swiper-wrapper" >
+                        <div class="swiper-slide"><img src="img/page5/review1.png"></div>
+                        <div class="swiper-slide"><img src="img/page5/review2.png"></div>
+                        <div class="swiper-slide"><img src="img/page5/review3.png"></div>
+                        <div class="swiper-slide"><img src="img/page5/review4.png"></div>
+                        <div class="swiper-slide"><img src="img/page5/review5.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다. [성공마케팅] 이미지 및 텍스트 출력 -->
+    <div id="page6">
+        <div class="pg6-container">
+            <img src="img/page6/pg6-tit.png" class="pg6-tit" data-aos="fade-up-right" data-aos-duration="800">
+            <img src="img/page6/pg6-tit-mo.png" class="pg6-tit-mo" data-aos="fade-up-right" data-aos-duration="800">
+            <div class="tv">
+                <img src="img/page6/tvframe.png" class="frame">
+                <div class="tv-wrap">
+                    <div class="tv-swiper-container">
+                        <div class="swiper-wrapper" >
+                            <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/NaJiy-Je0gE?si=S1UyxM_cptlK5Lse" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                            <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/YdxkEsatluY?si=C6GasLc4w_p1hbAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                        </div>
+                        <div class="tv-nav-wrap">
+                            <div class="nav-div"><img src="./img/page6/left.png" class="tv-button-back"></div>
+                            <div class="nav-div2"><img src="./img/page6/right2.png" class="tv-button-forward"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pg6-bottom">
+                <img src="img/page6/pg6-bottom.png" class="pg6-bottom-img-mo bounce">
+                <video class="video" src="./reels.mp4" muted autoplay playsinline></video>
+                <div class="pg6-bottom-tit">
+                    <img src="img/page6/pg6-bottom.png" class="pg6-bottom-img bounce">
+                    <div class="middle">
+                        <div>
+                            <img src="img/page6/icon.png">
+                        </div>
+                        <div class="middle-tit" data-aos="flip-up" data-aos-duration="1000">
+                            하나로는 부족하다!<br>
+                            <span class="big-tit">
+                            인생을 건 도박,<br>
+                            <span class="bold">신의 한 수</span> 였습니다
+                            </span>
+                        </div>
+                        <div class="icon-right">
+                            <img src="img/page6/icon2.png">
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        3점포 운영 성공전략의<br>
+                        <span class="bold">꽃게담다(송도점,배곧점,남동점) 점주</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bg"></div>
+    </div>
+
+    <!-- 출처: 꽃게담다. [메뉴소개] 이미지 및 텍스트 출력 -->
+    <div id="page7">
+        <div class="pg7-container">
+            <img src="img/page7/pg7-tit.png" class="pg7-tit" data-aos="zoom-in-up" data-aos-duration="1000">
+            <img src="img/page7/pg7-tit-mo.png" class="pg7-tit-mo" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="pg7-middle" data-aos="zoom-out" data-aos-duration="1000"><span class="bold">한식명장의 레시피</span>를 전수받아 특별하게 만든 특제소스에<br class="sm-br2">
+                <span class="blue">블루베리 효소를</span> 첨가하여<br class="no-br">맛과 건강을 한번에!</div>
+            <div class="menu-container">
+                <div class="menu-wrapper" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="img/page7/menu-img1.png" class="menu-img">
+                    <div class="menu-detail">
+                        <div class="menu-name">꽃게담다 정식</div>
+                        <div class="more">숫꽃게 간장게장 + 꽃게무침 + 꽃게쌀국수 + 공기밥
+                        + 샐러드 + 들김 + 콩나물무침 +미니깍두기</div>
+                    </div>
+                </div>
+                <div class="menu-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="img/page7/menu-img2.png" class="menu-img">
+                    <div class="menu-detail">
+                        <div class="menu-name">알찬게장 정식</div>
+                        <div class="more">암꽃게 간장게장 + 꽃게무침 + 꽃게쌀국수 + 공기밥
+                        + 샐러드 + 들김 + 콩나물무침 +미니깍두기</div>
+                    </div>
+                </div>
+                <div class="menu-wrapper" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="img/page7/menu-img3.png" class="menu-img">
+                    <div class="menu-detail">
+                        <div class="menu-name">꽃게탕</div>
+                        <div class="more">북어, 뱅어포, 무, 양파 등 갖은 재료로 육수를 내어 엄선된
+                        국내산 숫 통꽃게를 아낌없이 넣어 끓인 일품국물요리</div>
+                    </div>
+                </div>
+                <div class="menu-wrapper" data-aos="fade-left" data-aos-duration="1500">
+                    <img src="img/page7/menu-img4.png" class="menu-img">
+                    <div class="menu-detail">
+                        <div class="menu-name">기버터 꽃게찜</div>
+                        <div class="more">암꽃게 간장게장 + 꽃게무침 + 꽃게쌀국수 + 공기밥
+                        + 샐러드 + 들김 + 콩나물무침 +미니깍두기</div>
+                    </div>
+                </div>
+                <div class="menu-wrapper" data-aos="fade-right" data-aos-duration="2000">
+                    <img src="img/page7/menu-img5.png" class="menu-img">
+                    <div class="menu-detail">
+                        <div class="menu-name">블루베리 LA갈비한판 (400g)</div>
+                        <div class="more">특제간장소스와 블루베리 효소로 건강하고 고급스런 단맛과
+                        감칠맛을 더한 부드러운 식감의 LA 갈비</div>
+                    </div>
+                </div>
+                <div class="menu-wrapper" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="img/page7/menu-img6.png" class="menu-img">
+                    <div class="menu-detail">
+                        <div class="menu-name">보일링 크랩</div>
+                        <div class="more">숫꽃게, 통오징어, 낙지, 전복 새우 등 각종 해산물과 소스를
+                        매콤하게 양념한 미국남부 가정식 스타일의 해산물 요리</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pg7-bottom" data-aos="flip-up" data-aos-duration="1000">
+                <span class="bold">꽃게담다by 알찬게장</span>의 모든 원물은&nbsp;<br class="no-br"><span class="blue">동원수산(주)</span>의 국내산 꽃게 만을 사용합니다.
+            </div>
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다. [인테리어] 이미지 및 텍스트 출력 -->
+    <div id="page8">
+        <div class="pg8-container">
+            <div class="up-tit" data-aos="flip-right" data-aos-duration="1200">간장게장 식당이 이런 감성까지?<br class="no-br"> 바닷가에서 꽃게를 먹는 느낌!</div>
+            <img src="img/page8/pg8-tit.png" class="pg8-tit" data-aos="flip-right" data-aos-duration="1200">
+            <div class="interior-wrap">
+                    <div class="interior-swiper-container">
+                        <div class="swiper-wrapper" >
+                            <div class="swiper-slide"><img src="img/page8/interior1.png"></div>
+                            <div class="swiper-slide"><img src="img/page8/interior2.png"></div>
+                            <div class="swiper-slide"><img src="img/page8/interior3.png"></div>
+                            <div class="swiper-slide"><img src="img/page8/interior4.png"></div>
+                            <div class="swiper-slide"><img src="img/page8/interior5.png"></div>
+                            <div class="swiper-slide"><img src="img/page8/interior6.png"></div>
+                            <div class="swiper-slide"><img src="img/page8/interior7.png"></div>
+                            <div class="swiper-slide"><img src="img/page8/interior8.png"></div>
+                            <div class="swiper-slide"><img src="img/page8/interior9.png"></div>
+                            <div class="swiper-slide"><img src="img/page8/interior10.png"></div>
+                            <div class="swiper-slide"><img src="img/page8/interior11.png"></div>
+    <!--                        <div class="swiper-slide"><img src="img/page8/interior12.png"></div>-->
+                        </div>
+                        <div class="interior-nav-wrap">
+                            <img src="./img/page6/back.png" class="interior-button-back">
+                            <img src="./img/page6/next.png" class="interior-button-forward">
+                        </div>
+                    </div>
+            </div>
+            <div class="pg8-bottom">
+                <img src="img/page8/hawai.png" class="bottom-img">
+                <div class="pg8-bottom-tit" data-aos="zoom-in-left" data-aos-duration="1800">
+                <span class="bold">행복한 여행지</span>에서 사랑하는 사람과 함께하는 공간 연출<br>
+                차별화된 인테리어 공간으로 행복한 감성을 더하다!<br>
+                <br>
+                아름다운 공간과 더불어 맛있는 음식이 기억되는 곳.<br>
+                누구나 편하게 먹고 마실 수 있는 <span class="bold">여유로운 공간.</span><br>
+                잠깐의 <span class="bold">행복 여행을 선사할</span> 수 있는 공간으로 연출하였습니다.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다. [창업절차 및 비용] 이미지 및 텍스트 출력 -->
+    <div id="page9">
+        <div class="pg9-container">
+            <img src="img/page9/pg9-tit.png" class="pg9-tit" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="step-container">
+                <div class="step-box1 first" data-aos="zoom-out-right" data-aos-duration="800">
+                    <div class="notosans1">step1</div>
+                    <img src="img/page9/step1.png" class="step-img">
+                    <div class="step-detail1">가맹 희망지 상담</div>
+                </div>
+                <img src="img/page9/next_step.png" class="next-step">
+                <div class="step-box2 second" data-aos="zoom-out-right" data-aos-duration="1200">
+                    <div class="notosans2">step2</div>
+                    <img src="img/page9/step2.png" class="step-img">
+                    <div class="step-detail2">희망상권 점포 검토</div>
+                </div>
+                <div class="next-step-div"><img src="img/page9/next_step.png" class="next-step"></div>
+                <div class="step-box1 fourth" data-aos="zoom-out-right" data-aos-duration="1600">
+                    <div class="notosans1">step3</div>
+                    <img src="img/page9/step3.png" class="step-img">
+                    <div class="step-detail1">상권시장조사 개설심의</div>
+                </div>
+                <img src="img/page9/next_step.png" class="next-step-mo">
+                <div class="step-box2 third" data-aos="zoom-out-right" data-aos-duration="2000">
+                    <div class="notosans2">step4</div>
+                    <img src="img/page9/step4.png" class="step-img">
+                    <div class="step-detail2">점포계약 및 가맹계약</div>
+                </div>
+                <img src="img/page9/next_step.png" class="next-step">
+                <div class="step-box1 five" data-aos="zoom-out-right" data-aos-duration="2400">
+                    <div class="notosans1">step5</div>
+                    <img src="img/page9/step5.png" class="step-img">
+                    <div class="step-detail1">신규 가맹점 교육 진행</div>
+                </div>
+                <div class="next-step-div2"><img src="img/page9/next_step.png" class="next-step"></div>
+                <div class="step-box2 six" data-aos="zoom-out-right" data-aos-duration="2800">
+                    <div class="notosans2">step6</div>
+                    <img src="img/page9/step6.png" class="step-img">
+                    <div class="step-detail2">오픈 및 운영 지원</div>
+                </div>
+            </div>
+            <div class="pg9-middle-tit">가맹 계약 후 매장 오픈까지 총 소요시간은<br class="mo-br2"> <span class="bold">약 4주~5주</span> 정도입니다.</div>
+            <div class="cost-table">
+                <div class="table-tit" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">비용</div>
+                <div class="table">
+                    <div class="unit">단위: 만원 / VAT 별도</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="th1">구분</th>
+                                <th class="th2">30평</th>
+                                <th class="th3">50평</th>
+                                <th class="th2">100평</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="title">브랜드<br class="mi-br"> 로열티</td>
+                                <td colspan="3">면제</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td class="title">가맹비</td>
+                                <td colspan="3">700</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td class="title">교육비</td>
+                                <td colspan="3">300</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td class="title">인테리어<br class="mi-br">(평당180)</td>
+                                <td>5,400</td>
+                                <td>9,000</td>
+                                <td>18,000</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td class="title">주방기기<br class="mi-br">+홀집기</td>
+                                <td>2,000</td>
+                                <td>350</td>
+                                <td>4,000</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td class="title">POS /<br class="mi-br"> 오픈용품</td>
+                                <td>350</td>
+                                <td>350</td>
+                                <td>350</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td class="title">합계</td>
+                                <td class="total-cost">8,750</td>
+                                <td class="total-cost">13,350</td>
+                                <td class="total-cost">23,350</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-tit" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">FAQ</div>
+                <div class="faq-wrapper">
+                    <div class="faq" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="faq-title1">판매<br class="no-br"> 방식</div>
+                        <div class="faq-content">메인은 홀판매로 진행하고 서브 판매방식으로 포장판매 및 배달판매를 진행합니다.<br>
+                        추가적인 판매방식으로 확장해 나갈 예정이며 <span class="bold">365일 비수기 없이 운영</span>이 가능합니다.</div>
+                    </div>
+                    <div class="faq" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="faq-title2">점포<br class="no-br"> 선정</div>
+                        <div class="faq-content">예비 창업자님이 직접 매장을 선별하는 경우,
+                        본사에서는 상권 및 입지분석을 통해 점포를 확정하는 경우와 본사에서 준비해둔 점포를 제안하는 경우가 있습니다.</div>
+                    </div>
+                    <div class="faq" data-aos="flip-up" data-aos-duration="1500">
+                        <div class="faq-title2">최소<br class="no-br"> 평수</div>
+                        <div class="faq-content">술판매+포장+배달 영업방식으로 운영되어 <span class="bold">최소 평수는 30평 이상으로 진행</span>합니다.<br class="mi-br">
+                        상권, 매장입지 등에 따라 상이하기 때문에 창업지원팀과 사전 상담하시면 됩니다.</div>
+                    </div>
+                    <div class="faq" data-aos="flip-up" data-aos-duration="1500">
+                        <div class="faq-title1">인테<br class="no-br">리어</div>
+                        <div class="faq-content">브랜드 통일성 유지 및 원활한 A/S를 위해 본사 지정업체에서 공사를 진행합니다.<br class="mi-br">
+                        개별공사를 원하시면 소정의 감리비를 지불하고 개별공사를 하실 수 있습니다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다. [창업문의신청] 이미지 및 텍스트 출력 -->
+    <div id="contact">
+        <div class="contact-container">
+            <img src="img/contact/contact-tit.png" class="contact-tit">
+            <form name="contact_form" id="contact_form" method="post" action="contact_write.php" onsubmit="return FormSubmit();"  class="contact-form">
+                <div class="agree-wrap">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="agree" name="agree" class="round" required>
+                        개인정보처리방침에 동의합니다.
+                    </label>
+                    <span class="agree-open">보기</span>
+                </div>
+                <div class="input-container">
+                    <div class="label-wrap">
+                        <div class="label">성함</div>
+                        <span class="input"><input type="text" name="name" id="name"></span>
+                    </div>
+                    <div class="label-wrap">
+                        <div class="label">연락처</div>
+                        <span class="input"><input type="text" name="phone" id="phone"></span>
+                    </div>
+                    <div class="label-wrap">
+                        <div class="label">창업희망지역</div>
+                        <span class="input"><input type="text" name="location" id="location"></span>
+                    </div>
+                    <div class="label-wrap">
+                        <div class="label">희망창업비용</div>
+                        <span class="input"><input type="text" name="cost" id="cost"></span>
+                    </div>
+                    <div class="label-wrap">
+                        <div class="label">문의사항</br>(희망상담시간)</div>
+                        <span class="input"><textarea cols="120" rows="3" name="contact_desc" id="contact_desc"></textarea></span>
+                    </div>
+                </div>
+                <button onclick="return formSubmit();">상담 신청</button>
+                <div class="agree-modal">
+                    <div class="head">이용약관</div>
+                    <div class="txt">
+                        (주)꽃게담다 이하 회사의 개인정보 수 및 활용에 관한 내용<br />
+                        1. 수집하는 개인 정보 항목 : 성함, 연락처 <br />
+                        2. 동의서의 목적 : 제공하신 정보는 제품 소개 및 서비스 관련 정보 전송 등을 위한 개인 식별에 활용됩니다.<br />
+                        3. 개인 정보의 보유 및 이용기간 : 본 설문으로 수집된 개인 정보는 한도 관련 정보 전달 후 파기됩니다. (최대 3회 알림, 최대 보유 기간 1년) <br />
+                        4. 수집한 정보는 이외의 목적으로는 사용하지 않습니다. 개인 정보의 수집 및 활용에 대한 동의를 거부할 수 있으며, 이 경우 서비스 소개와 관련한 정보 제공 등이 제한됩니다.
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
