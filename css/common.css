@@ -1,0 +1,121 @@
+
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style-type : none;
+    margin: 0;
+    padding: 0;
+}
+#header {
+    background: #0A1845;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+}
+.head-inner {
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+}
+.logo {
+    max-width: 126px;
+    width: 90%;
+}
+.logo-mo {
+    width: 45px;
+    display: none;
+}
+nav {
+    width: 100%;
+    height: 100%;
+}
+.head-inner nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    justify-content: space-around;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.head-inner nav ul::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+.nav-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 16px;
+    opacity: 0.6;
+}
+.nav-menu:hover {
+    opacity: 1;
+}
+.tap {
+    opacity: 1;
+    border-bottom: 2px solid #FFF;
+    font-weight: 700;
+}
+#footer {
+    background: #232F58;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-inner {
+    color: #C6C8D0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+@media(max-width:900px) {
+    .nav-menu {
+        font-size: 15px;
+    }
+    .head-inner>nav>ul {
+        padding: 0 5%;
+        box-sizing: border-box;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        white-space: nowrap;
+        justify-content: flex-start;
+        position: relative;
+        overflow-y: hidden;
+        z-index: 1000;
+        gap: 20px;
+    }
+    .head-inner>nav>ul::-webkit-scrollbar {
+        display: none !important;
+    }
+}
+@media(max-width: 800px) {
+    .head-inner {
+        width: 95%;
+    }
+    .logo {
+        display: none;
+    }
+    .logo-mo {
+        display: block;
+    }
+}
+@media(max-width:768px) {
+    .nav-menu {
+        font-size: 14px;
+    }
+}
+

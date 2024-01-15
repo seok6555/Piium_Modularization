@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/crab-damda.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- 출처: 꽃게담다 [상단레이아웃]. -->
+    <div id="header">
+        <div class="head-inner">
+            <img src="img/crab-damda/logo.png" class="logo">
+            <img src="img/crab-damda/logo-mo.png" class="logo-mo">
+            <nav>
+                <ul>
+                    <li class="nav-menu link" data-target="page2">성공경쟁력</li>
+                    <li class="nav-menu link" data-target="page4">매출&수익</li>
+                    <li class="nav-menu link" data-target="page5">고객후기</li>
+                    <li class="nav-menu link" data-target="page6">성공마케팅</li>
+                    <li class="nav-menu link" data-target="page7">메뉴소개</li>
+                    <li class="nav-menu link" data-target="page8">인테리어</li>
+                    <li class="nav-menu link" data-target="page9">창업절차 및 비용</li>
+                    <li class="nav-menu link" data-target="contact">창업문의신청</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다 [메인화면]. 랜딩 레퍼런스 메인화면 선택 -->
+    <div id="page1">
+        <div class="pg1-container">
+            <img src="img/crab-damda/page1/logo-small.png" data-aos="zoom-in" data-aos-duration="1000" class="logo-small">
+            <img src="img/crab-damda/page1/pg1-tit.png" data-aos="zoom-in" data-aos-duration="1000" class="pg1-tit">
+            <div class="circle-wrapper">
+                <img src="img/crab-damda/page1/pg1-circle.png" data-aos="flip-right" data-aos-duration="1000" class="pg1-circle">
+                <img src="img/crab-damda/page1/pg1-circle2.png" data-aos="flip-right" data-aos-duration="1500" class="pg1-circle">
+                <img src="img/crab-damda/page1/pg1-circle3.png" data-aos="flip-right" data-aos-duration="2000" class="pg1-circle">
+            </div>
+            <div class="circle-wrap">
+                <div class="circle-swiper-container">
+                    <div class="swiper-wrapper" >
+                        <div class="swiper-slide"><img src="img/crab-damda/page1/pg1-circle.png"></div>
+                        <div class="swiper-slide"><img src="img/crab-damda/page1/pg1-circle2.png"></div>
+                        <div class="swiper-slide"><img src="img/crab-damda/page1/pg1-circle3.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다 [고객후기]. 랜딩 레퍼런스 레이아웃 선택 -->
+    <div id="page5">
+        <div class="pg5-container">
+            <img src="img/crab-damda/page5/pg5-tit.png" class="pg5-tit" data-aos="zoom-in-up" data-aos-duration="800">
+            <div class="laptop-div">
+                <img src="img/crab-damda/page5/star.png" class="star" data-aos="zoom-out" data-aos-duration="800">
+                <img src="img/crab-damda/page5/laptop.png" class="laptop">
+            </div>
+            <img src="img/crab-damda/page5/Group.png" class="laptop-group">
+            <div class="review-container">
+                <img src="img/crab-damda/page5/review1.png" class="review" data-aos="zoom-out-right" data-aos-duration="800">
+                <img src="img/crab-damda/page5/review2.png" class="review" data-aos="zoom-out-right" data-aos-duration="1300">
+                <img src="img/crab-damda/page5/review3.png" class="review" data-aos="zoom-out-right" data-aos-duration="1800">
+                <img src="img/crab-damda/page5/review4.png" class="review" data-aos="zoom-out-right" data-aos-duration="2300">
+                <img src="img/crab-damda/page5/review5.png" class="review" data-aos="zoom-out-right" data-aos-duration="2800">
+            </div>
+            <div class="review-wrap">
+                <div class="review-swiper-container">
+                    <div class="swiper-wrapper" >
+                        <div class="swiper-slide"><img src="img/crab-damda/page5/review1.png"></div>
+                        <div class="swiper-slide"><img src="img/crab-damda/page5/review2.png"></div>
+                        <div class="swiper-slide"><img src="img/crab-damda/page5/review3.png"></div>
+                        <div class="swiper-slide"><img src="img/crab-damda/page5/review4.png"></div>
+                        <div class="swiper-slide"><img src="img/crab-damda/page5/review5.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다 [성공경쟁력]. 랜딩 레퍼런스 페이지(영역) 선택 -->
+    <div id="page2">
+        <div class="pg2-container">
+            <div class="tit-div"><img src="img/crab-damda/page2/pg2-tit.png" class="pg2-tit" data-aos="fade-down" data-aos-duration="1000"></div>
+            <div class="tit-div"><img src="img/crab-damda/page2/pg2-tit-mo.png" class="pg2-tit-mo" data-aos="fade-down" data-aos-duration="1000"></div>
+            <div class="picture-container">
+                <div class="picture-wrapper1">
+                    <div class="square" data-aos="zoom-out-right"  data-aos-duration="500">
+                        <img src="img/crab-damda/page2/pg2-pic.png" class="pg2-pic">
+                        <div class="pic-detail">
+                            <div class="pic-tit">1. 경쟁없는 국내 유일브랜드</div>
+                            <hr>
+                            <div class="pic-content">수산업 국내 최대규모 <span>동원수산㈜</span>과의 계약으로<br>
+                            안정적 물량수급 및 전국 유통망 구축.<br>
+                            비용은 최대한 <span>낮추고</span> 경쟁력은 최대한 <span>높였</span>습니다</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture-wrapper2">
+                    <div class="square" data-aos="zoom-out-left"  data-aos-duration="800">
+                        <img src="img/crab-damda/page2/pg2-pic2.png" class="pg2-pic">
+                        <div class="pic-detail">
+                            <div class="pic-tit2">2. 인건비 절감</div>
+                            <hr>
+                            <div class="pic-content">명장의 노하우를 <span>원팩푸드 시스템 구축</span>을 통한 간편 운영.<br class="mo-br">
+                            라면만 끓일줄 알아도 가능한 간편조리로<br>
+                            인건비 절감이 충분히 가능합니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture-wrapper1">
+                    <div class="square" data-aos="zoom-out-left"  data-aos-duration="1100">
+                        <img src="img/crab-damda/page2/pg2-pic3.png" class="pg2-pic">
+                        <div class="pic-detail">
+                            <div class="pic-tit">3. 높은 순수익</div>
+                            <hr>
+                            <div class="pic-content">매출보다 중요한건 순수익 입니다.<br class="mo-br">
+                            32.4%의 높은 순수익, <span>자체수급</span>이기에 가능합니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture-wrapper2">
+                    <div class="square" data-aos="zoom-out-left"  data-aos-duration="1400">
+                        <img src="img/crab-damda/page2/pg2-pic4.png" class="pg2-pic">
+                        <div class="pic-detail">
+                            <div class="pic-tit2">4. <span>4WAY</span> 안정적 매출 구조</div>
+                            <hr>
+                            <div class="pic-content">밀키트 구성 + 점심메뉴 개발로</div>
+                            <div class="point-wrap"><span class="point">점심</span><span class="point">저녁</span><span class="point">배달</span><span class="point">포장</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture-wrapper1">
+                    <div class="square" data-aos="zoom-out-left"  data-aos-duration="1700">
+                        <img src="img/crab-damda/page2/pg2-pic5.png" class="pg2-pic">
+                        <div class="pic-detail">
+                            <div class="pic-tit">5. 오랫동안 갈 수 밖에 없는 브랜드</div>
+                            <hr>
+                            <div class="pic-content">결국 식당은 <span>음식맛으로 승부합니다</span>.  남녀노소 상관없이<br class="mo-br">
+                            전 연령이 좋아하고 트렌드를 타지않는 브랜드가 결국<br class="mo-br">
+                            살아남습니다.<br>
+                            <br>
+                            자체개발한 짜지않고 감칠맛나는 특제 간장소스로, 시식하신 분들은 대부분 맛을 보고 바로 계약할 수 밖에 없습니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture-wrapper2">
+                    <div class="square" data-aos="zoom-out-left"  data-aos-duration="2000">
+                        <img src="img/crab-damda/page2/pg2-pic6.png" class="pg2-big-pic">
+                        <div class="pic-detail2">
+                            <div class="pic-tit2">6. SNS에서도 핫한 매장</div>
+                            <hr>
+                            <div class="pic-content">메뉴의 퀄 대비 가성비 좋은 가격, 깔끔한 인테리어로<br class="mo-br">
+                            젊은 세대에겐 <span>SNS 가성비 맛집</span>으로 인기몰이 중</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    AOS.init();
+    
+    $(document).ready(function(){
+    
+        $('.link').on('click', function(){
+            var target = $(this).data('target');
+            $('html, body').animate({
+                scrollTop: $('#' + target).offset().top
+            }, 500);
+    
+            // 클릭한 메뉴 항목에 'tap' 클래스 추가
+            $('.link').removeClass('tap');
+            $(this).addClass('tap');
+        });
+    
+        $('.logo').on('click', function() {
+            $('html, body').animate({
+                scrollTop: 0 }, 500);
+        });
+    
+        $('.logo-mo').on('click', function() {
+            $('html, body').animate({
+                scrollTop: 0 }, 500);
+        });
+    
+    });
+    
+    var tv = new Swiper(".tv-swiper-container", {
+                slidesPerView: 1.8,
+                spaceBetween: 90,
+                loop:true,
+                observer: true,
+                observeParents: true,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 1000,
+                },
+                breakpoints: {
+                    100: {
+                        slidesPerView: 1,
+                        spaceBetween: 100,
+                    },
+                    700: {
+                        slidesPerView: 1.1,
+                        spaceBetween: 50,
+                    },
+                    900: {
+                        slidesPerView: 1.3,
+                        spaceBetween: 60, 
+                    },
+                    1100: {
+                        slidesPerView: 1.6,
+                        spaceBetween: 70,
+                    },
+                    1700: {
+                        slidesPerView: 1.8,
+                        spaceBetween: 90,
+                    },
+                    2000: {
+                        slidesPerView: 1.6,
+                        spaceBetween: 100,
+                    },
+                    2200: {
+                        slidesPerView: 1.8,
+                        spaceBetween: 100,
+                    },
+                    2500: {
+                        slidesPerView: 2.1,
+                        spaceBetween: 100,
+                    }
+                },
+                navigation : {
+                    nextEl : '.tv-button-forward',
+                    prevEl : '.tv-button-back',
+                },
+            });
+    
+            var interior = new Swiper(".interior-swiper-container", {
+                slidesPerView: 2.3,
+                spaceBetween: 90,
+                centeredSlides: true,
+                loop:true,
+                observer: true,
+                loopedSlides: 1,
+                observeParents: true,
+                slideToClickedSlide: true,
+                autoplay: {
+                    delay: 1000,
+                },
+                breakpoints: {
+                    600: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 50,
+                    },
+                    768: {
+                        slidesPerView: 1.7,
+                        spaceBetween: 50,
+                    },
+                    1000: {
+                        slidesPerView: 2.1,
+                        spaceBetween: 70,
+                    }
+                },
+                navigation : {
+                    nextEl : '.interior-button-forward',
+                    prevEl : '.interior-button-back',
+                },
+            });
+    
+            var circle = new Swiper(".circle-swiper-container", {
+                slidesPerView: 1.1,
+                spaceBetween: 20,
+                loopedSlides: 1,
+                loop:true,
+                autoplay: {
+                    delay: 1500,
+                },
+                observer: true,
+                observeParents: true,
+                centeredSlides: true,
+                breakpoints: {
+                    480: {
+                        slidesPerView: 1.3,
+                        spaceBetween: 20,
+                    },
+                    500: {
+                        slidesPerView: 1.4,
+                        spaceBetween: 30,
+                    },
+                    600: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 40,
+                    },
+                    900: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 40,
+                    }
+                },
+    
+            });
+    
+            var review = new Swiper(".review-swiper-container", {
+                slidesPerView: 4,
+                spaceBetween: 40,
+                loop:true,
+                observer: true,
+                observeParents: true,
+                centeredSlides: true,
+                breakpoints: {
+                    480: {
+                        slidesPerView: 1.6,
+                        spaceBetween: 20,
+                    },
+                    500: {
+                        slidesPerView: 2.1,
+                        spaceBetween: 30,
+                    },
+                    600: {
+                        slidesPerView: 2.6,
+                        spaceBetween: 30,
+                    },
+                    768: {
+                        slidesPerView: 3.2,
+                        spaceBetween: 30,
+                    },
+                    900: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    }
+                },
+                autoplay: {
+                    delay: 1500,
+                },
+            });
+    </script>
+</html>
