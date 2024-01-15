@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'OA Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OA Gothic-M';
+    src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Oa/OAGothic-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+.pc {
+    display: block;
+}
+.mobile {
+    display: none !important;
+}
+
+/* 메뉴소개1 [출처:뎁짜이 index.css] */
+#page8 {
+    background: url("../img/deptrai/pg8-bg.png");
+    background-repeat: repeat;
+    position: relative;
+    padding: 120px 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+.main-tit {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-radius: 100px;
+    border: 1.5px solid #FFF;
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 12px 40px;
+    color: #FFF;
+    font-family: OA Gothic;
+    font-size: 36px;
+    line-height: 140%; /* 50.4px */
+  }
+  .main-wrap {
+    width: 100%;
+  }
+  .main-swiper-container {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+  }
+  .main-swiper-container img {
+    width: 100%;
+  }
+  .main-nav-wrap {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 21.5%;
+    z-index: 10;
+  }
+  .main-button-back {
+    width: 40px !important;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(34, 34, 34, 0.30);
+    padding: 8px;
+  }
+  .main-button-forward {
+    width: 43px !important;
+    border-radius: 100px;
+    border: 2px solid #FFF;
+    background: #222;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+  }
+  .side-tit {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-radius: 100px;
+    border: 1.5px solid #FFF;
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 12px 40px;
+    color: #FFF;
+    font-family: OA Gothic;
+    font-size: 36px;
+    line-height: 140%; /* 50.4px */
+  }
+  .side-wrap {
+    width: 100%;
+  }
+  .side-swiper-container {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+  }
+  .side-swiper-container img {
+    width: 100%;
+  }
+  .side-nav-wrap {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 21.5%;
+    z-index: 10;
+  }
+  .side-button-back {
+    width: 40px !important;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(34, 34, 34, 0.30);
+    padding: 8px;
+  }
+  .side-button-forward {
+    width: 43px !important;
+    border-radius: 100px;
+    border: 2px solid #FFF;
+    background: #222;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+  }

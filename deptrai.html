@@ -8,11 +8,326 @@
     <meta http-equiv="imagetoolbar" content="no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <link href="css/reset.css" rel="stylesheet">
-    <script src="js/jquery-1.12.4.min.js"></script>
-</head>
-<body>
-    <!-- 출처: ㅇㅇㅇ. [메인 첫페이지] 이미지 출력 -->
+    <!-- 뎁짜이 common CSS 파일명 수정-->
+    <link rel="stylesheet" type="text/css" href="css/deptrai-common.css" rel="stylesheet" />
+    <!-- 뎁짜이 CSS 추가-->
+    <link rel="stylesheet" type="text/css" href="css/deptrai.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+</head>
+
+<body>
+    <!-- 상단 스티키 메뉴 [출처:뎁짜이 head.php] -->
+    <div id="header">
+        <div class="head-inner">
+            <!-- 이미지 경로 변경 -->
+            <img src="img/deptrai/logo.png" class="logo">
+            <img src="img/deptrai/logo-mo.png" class="logo-mo">
+            <nav>
+                <ul>
+                    <li class="nav-menu link" data-target="page2">매출</li>
+                    <li class="nav-menu link" data-target="page3">특별포인트</li>
+                    <li class="nav-menu link" data-target="page4">매체소개</li>
+                    <li class="nav-menu link" data-target="page5">성공마케팅</li>
+                    <li class="nav-menu link" data-target="page6">고객후기</li>
+                    <li class="nav-menu link" data-target="page7">인테리어</li>
+                    <li class="nav-menu link" data-target="page8">메뉴소개</li>
+                    <li class="nav-menu link" data-target="page11">가맹혜택</li>
+                    <li class="nav-menu link" data-target="page12">창업절차</li>
+                    <li class="nav-menu link" data-target="contact">창업문의신청</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 메뉴 소개1 [출처:뎁짜이 index.php]-->
+    <div id="page8">
+        <div class="main-tit">메인 메뉴</div>
+        <div class="main-wrap">
+            <div class="main-swiper-container">
+                <div class="swiper-wrapper" >
+                    <!-- 이미지 경로 변경-->
+                    <div class="swiper-slide"><img src="img/deptrai/main-img.png"></div>
+                    <div class="swiper-slide"><img src="img/deptrai/main-img2.png"></div>
+                    <div class="swiper-slide"><img src="img/deptrai/main-img3.png"></div>
+                    <div class="swiper-slide"><img src="img/deptrai/main-img4.png"></div>
+                    <div class="swiper-slide"><img src="img/deptrai/main-img5.png"></div>
+                    <div class="swiper-slide"><img src="img/deptrai/main-img6.png"></div>
+                </div>
+                <div class="main-nav-wrap">
+                    <!-- 이미지 경로 변경-->
+                    <img src="img/deptrai/left.png" class="main-button-back">
+                    <img src="img/deptrai/right.png" class="main-button-forward">
+                </div>
+            </div>
+        </div>
+        <div class="side-tit">사이드 메뉴</div>
+        <div class="side-wrap">
+            <div class="side-swiper-container">
+                <div class="swiper-wrapper" >
+                    <!-- 이미지 경로 변경-->
+                    <div class="swiper-slide"><img src="img/deptrai/side.png"></div>
+                    <div class="swiper-slide"><img src="img/deptrai/side2.png"></div>
+                    <div class="swiper-slide"><img src="img/deptrai/side3.png"></div>
+                    <div class="swiper-slide"><img src="img/deptrai/side4.png"></div>
+                    <div class="swiper-slide"><img src="img/deptrai/side5.png"></div>
+                    <div class="swiper-slide"><img src="img/deptrai/side6.png"></div>
+                </div>
+                <div class="side-nav-wrap">
+                    <!-- 이미지 경로 변경-->
+                    <img src="img/deptrai/left.png" class="side-button-back">
+                    <img src="img/deptrai/right.png" class="side-button-forward">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<!-- header [출처:뎁짜이 index.php] -->
+<script type="text/javascript">
+
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+
+    $(document).ready(function(){
+
+    $('.link').on('click', function(){
+        var target = $(this).data('target');
+        $('html, body').animate({
+            scrollTop: $('#' + target).offset().top
+        }, 500);
+
+        // 클릭한 메뉴 항목에 'tap' 클래스 추가
+        $('.link').removeClass('tap');
+        $(this).addClass('tap');
+    });
+
+    $('.logo').on('click', function() {
+        $('html, body').animate({
+            scrollTop: 0 }, 500);
+    });
+
+    $('.logo-mo').on('click', function() {
+        $('html, body').animate({
+            scrollTop: 0 }, 500);
+    });
+});
+
+$(document).ready(function() {
+    var phone = new Swiper(".phone-swiper-container", {
+        slidesPerView: 3.2,
+        spaceBetween: 70,
+        loop:true,
+        observer: true,
+        observeParents: true,
+        centeredSlides: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2,
+                spaceBetween: 60,
+            },
+            600: {
+                slidesPerView: 1.9,
+                spaceBetween: 60,
+            },
+            768: {
+                slidesPerView: 2.5,
+                spaceBetween: 70,
+            },
+            900: {
+                slidesPerView: 3.2,
+                spaceBetween: 70,
+            },
+            1550: {
+                slidesPerView: 3.2,
+                spaceBetween: 70,
+            },
+            3000: {
+                slidesPerView: 5.1,
+                spaceBetween: 70,
+            }
+        }
+        ,autoplay: {
+            delay: 1000
+        },
+        navigation : {
+            nextEl : '.phone-button-forward',
+            prevEl : '.phone-button-back',
+        },
+    });
+
+    var tv = new Swiper(".tv-swiper-container", {
+        slidesPerView: 1.2,
+        spaceBetween: 70,
+        loop:true,
+        observer: true,
+        observeParents: true,
+        centeredSlides: true,
+        breakpoints: {
+            600: {
+                slidesPerView: 1.4,
+                spaceBetween: 70,
+            },
+            951: {
+                slidesPerView: 1.6,
+                spaceBetween: 80,
+            },
+            1100: {
+                slidesPerView: 1.8,
+                spaceBetween: 68,
+            }
+        }
+        ,autoplay: {
+            delay: 1500
+        },
+        navigation : {
+            nextEl : '.tv-button-forward',
+            prevEl : '.tv-button-back',
+        },
+    });
+
+    var sns = new Swiper(".sns-swiper-container", {
+        slidesPerView: 3.1,
+        spaceBetween: 50,
+        loop:true,
+        observer: true,
+        observeParents: true,
+        centeredSlides: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1.7,
+                spaceBetween: 50,
+            },
+            480: {
+                slidesPerView: 1.9,
+                spaceBetween: 40,
+            },
+            600: {
+                slidesPerView: 2.5,
+                spaceBetween: 50,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        }
+        ,autoplay: {
+            delay: 1000
+        },
+    });
+
+    var interior = new Swiper(".interior-swiper-container", {
+        slidesPerView: 1.8,
+        spaceBetween: 73,
+        loop:true,
+        observer: true,
+        observeParents: true,
+        centeredSlides: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1.1,
+                spaceBetween: 50,
+            },
+            768: {
+                slidesPerView: 1.5,
+                spaceBetween: 50,
+            },
+            1000: {
+                slidesPerView: 1.8,
+                spaceBetween: 73,
+            }
+        }
+        ,autoplay: {
+            delay: 1500
+        },
+        navigation : {
+            nextEl : '.interior-button-forward',
+            prevEl : '.interior-button-back',
+        },
+    });
+
+    var main = new Swiper(".main-swiper-container", {
+        slidesPerView: 3.9,
+        spaceBetween: 50,
+        loop:true,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1.1,
+                spaceBetween: 50,
+                centeredSlides: true,
+            },
+            600: {
+                slidesPerView: 1.7,
+                spaceBetween: 50,
+                centeredSlides: true,
+            },
+            768: {
+                slidesPerView: 2.7,
+                spaceBetween: 50,
+            },
+            1000: {
+                slidesPerView: 3.9,
+                spaceBetween: 50,
+            }
+        }
+        ,autoplay: {
+            delay: 1500
+        },
+        navigation : {
+            nextEl : '.main-button-forward',
+            prevEl : '.main-button-back',
+        },
+    });
+
+    var side = new Swiper(".side-swiper-container", {
+        slidesPerView: 3.9,
+        spaceBetween: 50,
+        loop:true,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1.1,
+                spaceBetween: 50,
+                centeredSlides: true,
+            },
+            600: {
+                slidesPerView: 1.7,
+                spaceBetween: 50,
+                centeredSlides: true,
+            },
+            768: {
+                slidesPerView: 2.7,
+                spaceBetween: 50,
+            },
+            1000: {
+                slidesPerView: 3.9,
+                spaceBetween: 50,
+            }
+        }
+        ,autoplay: {
+            delay: 1500
+        },
+        navigation : {
+            nextEl : '.side-button-forward',
+            prevEl : '.side-button-back',
+        },
+    });
+});
+</script>
+
 </html>
