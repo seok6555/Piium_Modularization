@@ -1,18 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
     <meta name="HandheldFriendly" content="true">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="imagetoolbar" content="no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
     <link href="css/reset.css" rel="stylesheet">
-    <script src="js/jquery-1.12.4.min.js"></script>
-</head>
-<body>
-    <!-- 출처: 꽃게담다 [성공경쟁력]. 랜딩 레퍼런스 페이지(영역) 선택 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='https://www.google.com/recaptcha/api.js?render=6LedurUoAAAAANkVhXinDvwKmShRsRISFcnSshlI'></script>
+</head>
+
+<body>
+    <!-- 출처: 77년생곱도리전골식당 [페이지 5]. 랜딩 레퍼런스 페이지(영역) 선택 영수증 -->
+    <!-- 출처: 청담동순도리. 랜딩 레퍼런스 페이지(영역) 선택 메뉴소개5 -->
+    <div class="content page1">
+        <div class="slide-container">
+            <div class="slide-area receipt-slide-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/index/page1/page1-re1.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/page1/page1-re2.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/page1/page1-re3.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/page1/page1-re4.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/page1/page1-re5.png">
+                    </div>
+                </div>
+            </div>
+            <img class="receipt-next next" src="img/index/slide-next.png">
+            <img class="receipt-prev prev" src="img/index/slide-pre.png">
+        </div>
+    </div>
+
+    <!-- 출처: 77년생곱도리전골식당 [페이지 7]. 랜딩 레퍼런스 페이지(영역) 선택 영수증 -->
+    <div class="page2">
+        <div class="review-slide-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/index/page2/page2-recipt1.png"></div>
+                <div class="swiper-slide"><img src="img/index/page2/page2-recipt2.png"></div>
+                <div class="swiper-slide"><img src="img/index/page2/page2-recipt3.png"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- 출처: 청담동순도리. 랜딩 레퍼런스 페이지(영역) 선택 메뉴소개5 -->
+    <div class="content page3">
+        <img class="tit" data-aos="zoom-in-down" data-aos-duration="700" src="img/index/page3/page3-tit.png">
+        <div class="slide-container">
+            <img class="txt" src="img/index/page3/page3-txt1.png">
+            <div class="slide-area menu-slide-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/index/page3/page3-딤섬.png">
+                        <p>메뉴 이름</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/index/page3/page3-토스트.png">
+                        <p>메뉴 이름</p>
+                    </div>
+                </div>
+            </div>
+            <img class="menu-next next" src="img/index/slide-next.png">
+            <img class="menu-prev prev" src="img/index/slide-pre.png">
+        </div>
+        <div class="slide-container">
+            <img class="txt" src="img/index/page3/page3-txt2.png">
+            <div class="slide-area side-slide-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/index/page3/page3-토스트.png">
+                        <p>메뉴 이름</p>
+                    </div>
+                </div>
+            </div>
+            <img class="side-next next" src="img/index/slide-next.png">
+            <img class="side-prev prev" src="img/index/slide-pre.png">
+        </div>
+    </div>
+
+    <!-- 출처: 꽃게담다 [상단레이아웃]. -->
+    <div id="bottom">
+        <div class="bottom-inner">
+            <img src="img/index/logo.png" class="logo">
+            <img src="img/index/logo-mo.png" class="logo-mo">
+            <nav>
+                <ul>
+                    <li class="nav-menu link">
+                        <div class="label-wrap">
+                            <span class="input"><input type="text" name="name" id="name" placeholder="성함"></span>
+                        </div>
+                    </li>
+                    <li class="nav-menu link">
+                        <div class="label-wrap">
+                            <span class="input"><input type="text" name="phone" id="phone" placeholder="연락처"></span>
+                        </div>
+                    </li>
+                    <li class="nav-menu link">
+                        <div class="label-wrap">
+                            <span class="input"><input type="text" name="location" id="location" placeholder="창업희망지역"></span>
+                        </div>
+                    </li>
+                    <li class="nav-menu link">
+                        <div class="label-wrap">
+                            <span class="input"><input type="text" name="cost" id="cost" placeholder="희망창업비용"></span>
+                        </div>
+                    </li>
+                    <li class="nav-menu link">
+                        <div class="agree-wrap">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="agree" name="agree" class="round" required>
+                                개인정보처리방침에 동의
+                            </label>
+                        </div>
+                    </li>
+                    <li class="nav-menu link">
+                        <button onclick="return formSubmit();">상담 신청</button>
+                    </li>
+                </ul>
+            </nav>
+            <form name="contact_form" id="contact_form" method="post" action="contact_write.php"
+                onsubmit="return FormSubmit();" class="contact-form">
+        </div>
+    </div>
 </body>
+
+<script src='https://www.google.com/recaptcha/api.js?render=6LcLXVUnAAAAAF1w7NfQZ2qif8xPlZnCPUw5jwq7'></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    AOS.init();
+
+    window.onpageshow = function (event) {
+        if (event.persisted || (window.performance && window.performance.navigation.type == 2)) {
+            // Back Forward Cache로 브라우저가 로딩될 경우 혹은 브라우저 뒤로가기 했을 경우
+            location.href = "/";
+        }
+    }
+
+    $(document).ready(function () {
+
+        var $w = $(window),
+            footerHei = $('.contact-wrap').outerHeight(),
+            $floating = $('.floating-container');
+
+        $w.on('scroll', function () {
+
+            var sT = $w.scrollTop();
+            var val = $(document).height() - $w.height() - footerHei;
+
+            if (sT >= val)
+                $floating.fadeOut('600');
+            else
+                $floating.fadeIn('600');
+
+        });
+
+        $('.logo').on('click', function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+        });
+
+        $('.logo-mo').on('click', function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+        });
+    });
+    $(function () {
+
+        var menu = new Swiper(".receipt-slide-container", {
+            slidesPerView: 5,
+            
+            loop: this.SwioperLength > 1, // 슬라이드가 한개 이상일때만 loop: true
+            watchOverflow: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.receipt-next', // 다음 버튼 클래스명
+                prevEl: '.receipt-prev', // 이번 버튼 클래스명
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 0
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 20
+                },
+            }
+        });
+    });
+
+    $(function () {
+        var menuSlide = new Swiper(".review-slide-container", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: { // 페이징 설정
+                el: '.swiper-pagination',
+                clickable: true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+            }
+        });
+
+    });
+
+    $(function () {
+
+        var menu = new Swiper(".menu-slide-container", {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.menu-next', // 다음 버튼 클래스명
+                prevEl: '.menu-prev', // 이번 버튼 클래스명
+            },
+        });
+        var side = new Swiper(".side-slide-container", {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.side-next', // 다음 버튼 클래스명
+                prevEl: '.side-prev', // 이번 버튼 클래스명
+            },
+        });
+    });
+
+    function formSubmit() {
+        let name = $("#name").val();
+        let phone = $("#phone").val();
+        let location = $("#location").val();
+        let cost = $("#cost").val();
+        let contact_desc = $("#contact_desc").val();
+        let formData = new FormData();
+
+        if (name == "") {
+            alert("성함을 입력해주세요.");
+            $("#name").focus();
+            return false;
+        } else if (phone == "") {
+            alert("연락처를 입력해주세요.");
+            $("#phone").focus();
+            return false;
+        }
+        else if (location == "") {
+            alert("창업희망지역을 입력해주세요.");
+            $("#location").focus();
+            return false;
+        }
+        else if (cost == "") {
+            alert("희망창업비용 입력해주세요.");
+            $("#cost").focus();
+            return false;
+        }
+        else if (contact_desc == "") {
+            alert("문의사항을 입력해주세요.");
+            $("#contact_desc").focus();
+            return false;
+        }
+
+        formData.append("blogUrl", email);
+        formData.append("email", email);
+        fetch('https://api.dev-durumis.online/teaser/en/register', {
+            method: 'POST',
+            cache: 'no-cache',
+            body: formData // body 부분에 폼데이터 변수를 할당
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+            });
+
+        alert("신청해주셔서 감사합니다.");
+    }
+</script>
+
 </html>
