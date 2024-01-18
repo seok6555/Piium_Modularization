@@ -245,6 +245,32 @@
   left: 0%;
 }
 
+#page4 {
+  background: url("../img/index/page4/pg4-bg.png");
+  background-size: cover !important;
+  background-position: center center !important;
+  position: relative;
+  padding: 120px 0 100px;
+}
+.pg4-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pg4-tit {
+  width: 50%;
+}
+.laptop-div {
+  margin-top: 65px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.laptop {
+  width: 100%;
+}
+
 ul,
 li {
   list-style-type: none;
