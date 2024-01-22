@@ -1759,6 +1759,25 @@ input[type=text] {
     height: 220px;
   }
 }
+@media(max-width:520px) {
+  .step-box1, .step-box2 {
+    width: 150px;
+    height: 150px;
+    gap: 15px;
+  }
+  .step-container {
+    gap: 5px;
+  }
+  .notosans1, .notosans2 {
+    font-size: 18px;
+  }
+  .step-detail1, .step-detail2 {
+    font-size: 15px;
+  }
+  .step-img {
+    width: 48px;
+  }
+}
 @media(max-width:480px) {
   .pg2-container {
     padding: 100px 0 80px;
@@ -1839,23 +1858,6 @@ input[type=text] {
   .contact-tit {
     width: 100%;
   }
-  .step-box1, .step-box2 {
-    width: 150px;
-    height: 150px;
-    gap: 15px;
-  }
-  .step-container {
-    gap: 5px;
-  }
-  .notosans1, .notosans2 {
-    font-size: 18px;
-  }
-  .step-detail1, .step-detail2 {
-    font-size: 15px;
-  }
-  .step-img {
-    width: 48px;
-  }
   .next-step, .next-step-mo {
     width: 25px;
     height: 25px;
@@ -1863,5 +1865,17 @@ input[type=text] {
   .agree-modal {
     width: 340px;
     left: calc(50% - 170px);
+  }
+}
+@media(max-width:390px) {
+  .step-box1, .step-box2 {
+    width: 130px;
+    height: 130px;
+  }
+  .notosans1, .notosans2 {
+    font-size: 15px;
+  }
+  .step-detail1, .step-detail2 {
+    font-size: 13px;
   }
 }
