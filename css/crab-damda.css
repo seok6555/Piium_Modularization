@@ -1758,6 +1758,12 @@ input[type=text] {
     width: 190px;
     height: 220px;
   }
+  .notosans1, .notosans2 {
+    font-size: 18px;
+  }
+  .step-detail1, .step-detail2 {
+    font-size: 15px;
+  }
 }
 @media(max-width:520px) {
   .step-box1, .step-box2 {
@@ -1765,14 +1771,14 @@ input[type=text] {
     height: 150px;
     gap: 15px;
   }
-  .step-container {
-    gap: 5px;
-  }
   .notosans1, .notosans2 {
-    font-size: 18px;
+    font-size: 15px;
   }
   .step-detail1, .step-detail2 {
-    font-size: 15px;
+    font-size: 12px;
+  }
+  .step-container {
+    gap: 5px;
   }
   .step-img {
     width: 48px;
@@ -1873,9 +1879,9 @@ input[type=text] {
     height: 130px;
   }
   .notosans1, .notosans2 {
-    font-size: 15px;
+    font-size: 12px;
   }
   .step-detail1, .step-detail2 {
-    font-size: 13px;
+    font-size: 10px;
   }
 }
